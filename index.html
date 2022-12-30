@@ -5,71 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Git Alone</title>
+    <link rel="stylesheet" href="style/styles.css" />
   </head>
   <body>
-    <h1>My Portfolio</h1>
-    <table cellspacing="10">
-      <tr>
-        <td>
-          <img
-            src="img/photo.jpg"
-            width="250px"
-            alt="Portfolio photo"
-            title="Photo"
-          />
-        </td>
-        <td>
-          <h3>Кузнецов Роман</h3>
-          <p><em>Какой-то курсивный текст</em></p>
-          <p><strong>Очень жирный черный текст</strong></p>
-        </td>
-      </tr>
-    </table>
-    <hr />
-    <h2>Опыт работы</h2>
-    <table>
-      <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-      <tr>
-        <td>EPAM</td>
-        <td>DevOps</td>
-        <td>2016-2018</td>
-      </tr>
-      <tr>
-        <td>ProVision</td>
-        <td>Junior dev</td>
-        <td>2018-2019</td>
-      </tr>
-      <tr>
-        <td>PreLoad</td>
-        <td>Game dev</td>
-        <td>2019-н.в.</td>
-      </tr>
-    </table>
-    <hr />
-    <h2>Мои увлечения</h2>
-    <ol>
-      <li>Travel</li>
-      <li>Snowboard</li>
-      <li>Photography</li>
-    </ol>
-    <hr />
-    <h2>Связанься со мной</h2>
-    <form action="/">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Введите имя.." />
-      <br /><br />
-      <label for="email">Ваш email:</label>
-      <input type="email" id="email" placeholder="Введите email.." />
-      <br /><br />
-      <label for="feedback">Сообщение:</label><br />
-      <textarea id="feedback" rows="2"></textarea>
-      <br /><br />
-      <input type="submit" value="Связаться" />
-    </form>
+    <div class="container">
+      <div class="info">
+        <img
+          src="img/photo.jpg"
+          alt="Portfolio photo"
+          title="Photo"
+          class="avatar"
+        />
+
+        <h1>Кузнецов Роман</h1>
+        <p>Какой-то курсивный текст</p>
+        <p>Очень жирный черный текст</p>
+
+        <h4>Мои социальные сети</h4>
+        <a href="#" target="_blank">Vkontakte</a>
+        |
+        <a href="https://t.me/skarzn" target="_blank">Telegram</a>
+      </div>
+
+      <div class="card bg-yellow">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <tr>
+            <td>EPAM</td>
+            <td>DevOps</td>
+            <td>2016-2018</td>
+          </tr>
+          <tr>
+            <td>ProVision</td>
+            <td>Junior dev</td>
+            <td>2018-2019</td>
+          </tr>
+          <tr>
+            <td>PreLoad</td>
+            <td>Game dev</td>
+            <td>2019-н.в.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card bg-green">
+        <h2>Мои увлечения</h2>
+        <ol class="list">
+          <li>Travel</li>
+          <li>Snowboard</li>
+          <li>Photography</li>
+        </ol>
+      </div>
+
+      <div class="card bg-red">
+        <h2>Мои проекты</h2>
+        <ol class="list">
+          <li>Первый</li>
+          <li>Второй</li>
+          <li>Третий</li>
+        </ol>
+      </div>
+
+      <div class="contact">
+        <h2>Связанься со мной</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите имя.." />
+            </div>
+            <div class="form-group">
+              <label for="email">Ваш email:</label>
+              <input type="email" id="email" placeholder="Введите email.." />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="feedback">Сообщение:</label>
+            <textarea id="feedback" rows="2"></textarea>
+          </div>
+
+          <input type="submit" value="Связаться" />
+        </form>
+      </div>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
